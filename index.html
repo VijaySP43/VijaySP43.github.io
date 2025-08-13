@@ -1,270 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Vijay S P • Portfolio</title>
-  <meta name="description" content="Electronics & Communication Engineer • Embedded Systems & Automotive Technology" />
-  <link rel="preload" as="image" href="profile.jpg" />
-  <link rel="stylesheet" href="style.css" />
-
-  <!-- AOS (scroll animations) -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
-  <!-- Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Vijay S P • Portfolio">
-  <meta property="og:description" content="Embedded Systems & Automotive Technology Enthusiast">
-  <meta property="og:type" content="website">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vijay S P - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-  <!-- Background particles & gradients -->
-  <canvas id="bg-canvas" aria-hidden="true"></canvas>
-  <div class="bg-nebula" aria-hidden="true"></div>
 
-  <!-- NAV -->
-  <nav class="nav glass">
-    <a href="#" class="brand">Vijay<span>SP</span></a>
-    <button class="nav-toggle" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></button>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#achievements">Achievements</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- HERO -->
-  <header id="top" class="hero">
-    <div class="container hero-grid">
-      <img src="profile.jpg" alt="Portrait of Vijay S P" class="avatar" data-aos="zoom-in" data-aos-duration="900"/>
-      <div class="hero-copy">
-        <h1 class="title" data-aos="fade-up" data-aos-delay="100">Vijay <span>S P</span></h1>
-        <p class="subtitle" data-aos="fade-up" data-aos-delay="200">Electronics & Communication Engineer</p>
-        <p class="tagline" data-aos="fade-up" data-aos-delay="300">
-          <span id="rotator">Embedded Systems • Real-time thinking.</span><span class="cursor">|</span>
-        </p>
-        <div class="hero-cta" data-aos="fade-up" data-aos-delay="400">
-          <a class="btn" href="#projects"><i class="fa-solid fa-rocket"></i> View Projects</a>
-          <a class="btn btn-ghost" href="#contact"><i class="fa-solid fa-envelope"></i> Contact Me</a>
-        </div>
-      </div>
+<!-- ===== Hero Section ===== -->
+<header class="hero">
+    <img src="profile.jpg" alt="Vijay S P" class="profile-pic" data-aos="fade-down">
+    <h1 data-aos="fade-up">Vijay <span>S P</span></h1>
+    <h3 data-aos="fade-up">Electronics & Communication Engineer</h3>
+    <p class="tagline" data-aos="fade-up"></p>
+    <div class="hero-buttons" data-aos="fade-up">
+        <a href="#contact" class="btn">Contact Me</a>
+        <a href="#projects" class="btn secondary">See Projects</a>
     </div>
-    <svg class="wave" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true">
-      <path d="M0,64L80,80C160,96,320,128,480,122.7C640,117,800,75,960,74.7C1120,75,1280,117,1360,138.7L1440,160L1440,0L0,0Z"></path>
-    </svg>
-  </header>
+</header>
 
-  <!-- ABOUT -->
-  <section id="about" class="section">
-    <div class="container">
-      <h2 class="section-title" data-aos="fade-right">About Me</h2>
-      <p class="lead" data-aos="fade-right" data-aos-delay="150">
-        Passionate about innovation and solving complex problems, I aim to drive advancements in automotive technology
-        and software development. My focus is on building intelligent, high-performance systems that promote efficiency
-        and sustainability through continuous learning and adaptation.
-      </p>
+<!-- ===== About Me ===== -->
+<section id="about" class="section" data-aos="fade-right">
+    <h2>About Me</h2>
+    <p>
+        Passionate about innovation and solving complex problems, I aim to drive advancements in automotive technology and software development.
+        My focus is on building intelligent, high-performance systems that promote efficiency and sustainability through continuous learning and adaptation.
+    </p>
+</section>
 
-      <div class="journey">
-        <div class="node" data-aos="fade-up">
-          <div class="dot"></div>
-          <div class="card">
-            <h3>Curiosity → Craft</h3>
-            <p>From circuits to code, I love turning raw ideas into robust systems.</p>
-          </div>
-        </div>
-        <div class="node" data-aos="fade-up" data-aos-delay="100">
-          <div class="dot"></div>
-          <div class="card">
-            <h3>Systems Thinking</h3>
-            <p>Embedded, estimation, and control—finding signal in the noise.</p>
-          </div>
-        </div>
-        <div class="node" data-aos="fade-up" data-aos-delay="200">
-          <div class="dot"></div>
-          <div class="card">
-            <h3>Impact</h3>
-            <p>Build practical solutions that are reliable, efficient, and scalable.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- EDUCATION -->
-  <section id="education" class="section alt">
-    <div class="container">
-      <h2 class="section-title" data-aos="fade-right">Education</h2>
-      <div class="cards">
-        <article class="card edu" data-aos="zoom-in">
-          <div class="card-icon">🎓</div>
-          <div class="card-body">
+<!-- ===== Education ===== -->
+<section id="education" class="section" data-aos="fade-left">
+    <h2>Education</h2>
+    <div class="cards">
+        <div class="card">
             <h3>B.E. Electronics & Communication</h3>
             <p>KLE Technological University, Hubballi (2021–2025)</p>
-            <p><strong>CGPA:</strong> 8.5</p>
-          </div>
-        </article>
-        <article class="card edu" data-aos="zoom-in" data-aos-delay="100">
-          <div class="card-icon">🏅</div>
-          <div class="card-body">
+            <p>CGPA: 8.5</p>
+        </div>
+        <div class="card">
             <h3>Pre-University</h3>
             <p>Shree Annadaneshwara P U College, Naregal (2021)</p>
-            <p><strong>Percentage:</strong> 97.16%</p>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects" class="section">
-    <div class="container">
-      <h2 class="section-title" data-aos="fade-right">Projects</h2>
-
-      <div class="grid">
-        <!-- LFSR -->
-        <article class="proj" data-aos="fade-up" data-modal="modal-lfsr">
-          <div class="proj-media">
-            <div class="badge">Featured</div>
-            <div class="glow"></div>
-          </div>
-          <div class="proj-content">
-            <h3>168-bit LFSR (NVIDIA Project, Aug 2024)</h3>
-            <p>High-quality pseudo-random sequences; randomness analysis for crypto & simulations.</p>
-            <button class="link">Read more</button>
-          </div>
-        </article>
-
-        <!-- Kalman vs LSTM -->
-        <article class="proj" data-aos="fade-up" data-aos-delay="100" data-modal="modal-kalman">
-          <div class="proj-media"><div class="glow"></div></div>
-          <div class="proj-content">
-            <h3>Kalman vs LSTM — Estimation Accuracy</h3>
-            <p>Observed ~9.76% accuracy gain with LSTM on rapidly varying datasets.</p>
-            <button class="link">Read more</button>
-          </div>
-        </article>
-
-        <!-- Sensor Fusion -->
-        <article class="proj" data-aos="fade-up" data-aos-delay="200" data-modal="modal-fusion">
-          <div class="proj-media"><div class="glow"></div></div>
-          <div class="proj-content">
-            <h3>Sensor Fusion Ego Localization (Kalman)</h3>
-            <p>Fused GPS + IMU to improve autonomous vehicle localization accuracy.</p>
-            <button class="link">Read more</button>
-          </div>
-        </article>
-      </div>
-      <p class="hint">Tip: in each modal, add links to GitHub or a live demo.</p>
-    </div>
-  </section>
-
-  <!-- SKILLS -->
-  <section id="skills" class="section alt">
-    <div class="container">
-      <h2 class="section-title" data-aos="fade-right">Skills Map</h2>
-      <canvas id="constellation" width="1100" height="360" aria-label="Skills constellation"></canvas>
-      <ul class="skill-tags" data-aos="fade-up">
-        <li>C</li><li>C++</li><li>OOP</li><li>SQL</li>
-        <li>RTOS</li><li>Microcontrollers</li><li>Linux</li>
-        <li>Embedded</li><li>VLSI Basics</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- ACHIEVEMENTS -->
-  <section id="achievements" class="section">
-    <div class="container">
-      <h2 class="section-title" data-aos="fade-right">Achievements</h2>
-      <ul class="timeline">
-        <li data-aos="fade-up">
-          <div class="dot"></div>
-          <div class="tl-body">
-            <h3>IEEE INCET 2024 — Publication</h3>
-            <p>“Analysis of Estimation Accuracy Between Kalman and LSTM Algorithm”.</p>
-          </div>
-        </li>
-        <li data-aos="fade-up" data-aos-delay="100">
-          <div class="dot"></div>
-          <div class="tl-body">
-            <h3>NMMS Scholarship</h3>
-            <p>National Means-Cum-Merit Scholarship recipient.</p>
-          </div>
-        </li>
-        <li data-aos="fade-up" data-aos-delay="200">
-          <div class="dot"></div>
-          <div class="tl-body">
-            <h3>Service</h3>
-            <p>Volunteer for 75th Anniversary Amrit Mahotsav Celebration.</p>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="section alt">
-    <div class="container">
-      <h2 class="section-title" data-aos="fade-right">Contact</h2>
-      <div class="contact glass" data-aos="zoom-in">
-        <div class="contact-grid">
-          <a class="contact-item" href="mailto:vijaypattar7@gmail.com"><i class="fa-solid fa-envelope"></i> Email<br><small>vijaypattar7@gmail.com</small></a>
-          <a class="contact-item" href="https://www.linkedin.com/in/vijaysp7/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn<br><small>linkedin.com/in/vijaysp7</small></a>
-          <a class="contact-item" href="https://github.com/VijaySP43" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub<br><small>github.com/VijaySP43</small></a>
-          <div class="contact-item"><i class="fa-solid fa-phone"></i> Phone<br><small>+91-7022703120</small></div>
+            <p>Percentage: 97.16%</p>
         </div>
-
-        <!-- Simple email form (mailto) -->
-        <form class="contact-form" action="mailto:vijaypattar7@gmail.com" method="post" enctype="text/plain">
-          <input type="text" name="name" placeholder="Your name" required />
-          <input type="email" name="email" placeholder="Your email" required />
-          <textarea name="message" rows="4" placeholder="Your message"></textarea>
-          <button class="btn" type="submit"><i class="fa-solid fa-paper-plane"></i> Send</button>
-        </form>
-      </div>
     </div>
-  </section>
+</section>
 
-  <footer class="footer">
-    <p>© <span id="y"></span> Vijay S P • All rights reserved.</p>
-  </footer>
-
-  <!-- Modals -->
-  <div id="modal-lfsr" class="modal">
-    <div class="modal-body glass">
-      <button class="modal-close" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
-      <h3>168-bit LFSR (NVIDIA Project)</h3>
-      <p>Developed a 168-bit LFSR for pseudo-random number generation, performed randomness analysis,
-        and achieved high-quality sequences for cryptography and simulations.</p>
-      <a class="btn btn-small" href="#" target="_blank" rel="noopener">GitHub / Demo</a>
+<!-- ===== Projects ===== -->
+<section id="projects" class="section" data-aos="fade-up">
+    <h2>Projects</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Large Linear Feedback Shift Register</h3>
+            <p>168-bit LFSR for cryptography & simulations (NVIDIA Project - Aug 2024).</p>
+        </div>
+        <div class="card">
+            <h3>Kalman vs LSTM Algorithms</h3>
+            <p>Compared accuracy, LSTM improved by 9.76%.</p>
+        </div>
+        <div class="card">
+            <h3>Sensor Fusion Ego Localization</h3>
+            <p>Integrated GPS + IMU using Kalman filter for autonomous vehicles.</p>
+        </div>
     </div>
-  </div>
+</section>
 
-  <div id="modal-kalman" class="modal">
-    <div class="modal-body glass">
-      <button class="modal-close" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
-      <h3>Kalman vs LSTM — Estimation Accuracy</h3>
-      <p>Compared Kalman and LSTM algorithms for state estimation; ~9.76% accuracy improvement observed with LSTM
-        on rapidly varying datasets.</p>
-      <a class="btn btn-small" href="#" target="_blank" rel="noopener">GitHub / Paper</a>
+<!-- ===== Skills ===== -->
+<section id="skills" class="section" data-aos="fade-right">
+    <h2>Skills</h2>
+    <div class="skills-list">
+        <span>C</span><span>C++</span><span>OOP</span><span>SQL</span>
+        <span>RTOS</span><span>Microcontrollers</span><span>Linux</span>
+        <span>Embedded Systems</span><span>VLSI Basics</span>
     </div>
-  </div>
+</section>
 
-  <div id="modal-fusion" class="modal">
-    <div class="modal-body glass">
-      <button class="modal-close" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
-      <h3>Sensor Fusion Ego Localization (Kalman)</h3>
-      <p>Integrated GPS and IMU sensors to improve autonomous vehicle localization accuracy with a Kalman filter pipeline.</p>
-      <a class="btn btn-small" href="#" target="_blank" rel="noopener">GitHub / Demo</a>
+<!-- ===== Achievements ===== -->
+<section id="achievements" class="section" data-aos="fade-left">
+    <h2>Achievements</h2>
+    <ul>
+        <li>IEEE INCET 2024 Publication</li>
+        <li>NMMS Scholarship Recipient</li>
+        <li>Volunteer for 75th Anniversary Amrit Mahotsav</li>
+    </ul>
+</section>
+
+<!-- ===== Contact ===== -->
+<section id="contact" class="section" data-aos="fade-up">
+    <h2>Contact</h2>
+    <div class="contact-card">
+        <p><i class="fa-solid fa-envelope"></i> vijaypattar7@gmail.com</p>
+        <p><i class="fa-brands fa-linkedin"></i> linkedin.com/in/vijaysp7</p>
+        <p><i class="fa-brands fa-github"></i> github.com/VijaySP43</p>
+        <p><i class="fa-solid fa-phone"></i> +91-7022703120</p>
     </div>
-  </div>
+</section>
 
-  <!-- Scripts -->
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
