@@ -3,21 +3,16 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Vijay S P • Portfolio</title>
-  <meta name="description" content="Portfolio of Vijay S P — Electronics & Communication Engineer, Embedded & Automotive Technology." />
+  <title>Vijay S P — Portfolio</title>
+  <meta name="description" content="Electronics & Communication Engineer | Embedded Systems & Automotive Technology Enthusiast" />
   <link rel="preload" as="image" href="profile.jpg">
   <link rel="stylesheet" href="style.css" />
-  <style>
-    /* Small inline fallback to avoid FOUC if style.css loads a tad late */
-    html{scroll-behavior:smooth}
-    *{box-sizing:border-box}
-  </style>
 </head>
 <body>
-  <!-- Sticky Navbar -->
-  <nav class="nav">
+  <!-- ================= NAV ================= -->
+  <nav class="nav glass">
     <a href="#" class="brand">Vijay<span>SP</span></a>
-    <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+    <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#education">Education</a></li>
@@ -28,48 +23,86 @@
     </ul>
   </nav>
 
-  <!-- Header / Hero -->
-  <header class="hero">
+  <!-- ================= HERO / STORY ================= -->
+  <header class="hero" id="top">
+    <div class="stars" aria-hidden="true"></div>
+    <div class="nebula" aria-hidden="true"></div>
+
     <div class="container hero-grid">
-      <img src="profile.jpg" alt="Portrait of Vijay S P" class="avatar" />
-      <div class="hero-copy">
+      <div class="hero-left">
+        <img src="profile.jpg" alt="Portrait of Vijay S P" class="avatar" />
+      </div>
+      <div class="hero-right">
         <h1 class="title">Vijay <span>S P</span></h1>
-        <p class="subtitle">Electronics & Communication Engineer • Embedded Systems & Automotive Technology Enthusiast</p>
+        <p class="subtitle">Electronics & Communication Engineer</p>
+        <p class="tagline">
+          <span id="rotator"></span>
+          <span class="cursor">|</span>
+        </p>
         <div class="hero-cta">
           <a class="btn" href="#contact">Contact Me</a>
-          <a class="btn btn-ghost" href="#projects">View Projects</a>
+          <a class="btn btn-ghost" href="#projects">See Projects</a>
         </div>
       </div>
     </div>
-    <div class="hero-wave" aria-hidden="true"></div>
+
+    <div class="scroll-indicator">Scroll</div>
+    <svg class="wave" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,64L80,80C160,96,320,128,480,122.7C640,117,800,75,960,74.7C1120,75,1280,117,1360,138.7L1440,160L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
+    </svg>
   </header>
 
-  <!-- About -->
+  <!-- ================= ABOUT / JOURNEY ================= -->
   <section id="about" class="section">
     <div class="container">
-      <h2 class="section-title">About Me</h2>
-      <p class="lead">
-        Passionate about innovation and solving complex problems, I aim to drive advancements in automotive technology and software development.
-        My focus is on building intelligent, high-performance systems that promote efficiency and sustainability through continuous learning and adaptation.
+      <h2 class="section-title reveal">About Me</h2>
+      <p class="lead reveal">
+        Passionate about innovation and solving complex problems, I aim to drive advancements in automotive technology
+        and software development. My focus is on building intelligent, high-performance systems that promote efficiency
+        and sustainability through continuous learning and adaptation.
       </p>
+
+      <div class="journey">
+        <div class="node reveal">
+          <div class="dot"></div>
+          <div class="card">
+            <h3>Curiosity → Craft</h3>
+            <p>From circuits to code, I love turning raw ideas into robust systems.</p>
+          </div>
+        </div>
+        <div class="node reveal">
+          <div class="dot"></div>
+          <div class="card">
+            <h3>Systems Thinking</h3>
+            <p>Embedded, estimation, and control—finding signal in the noise.</p>
+          </div>
+        </div>
+        <div class="node reveal">
+          <div class="dot"></div>
+          <div class="card">
+            <h3>Impact</h3>
+            <p>Build practical solutions that are reliable, efficient, and scalable.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Education -->
-  <section id="education" class="section">
+  <!-- ================= EDUCATION ================= -->
+  <section id="education" class="section alt">
     <div class="container">
-      <h2 class="section-title">Education</h2>
+      <h2 class="section-title reveal">Education</h2>
       <div class="cards">
-        <article class="card">
-          <div class="card-icon" aria-hidden="true">🎓</div>
+        <article class="card reveal">
+          <div class="card-icon">🎓</div>
           <div class="card-body">
-            <h3>B.E. in Electronics & Communication</h3>
+            <h3>B.E. Electronics & Communication</h3>
             <p>KLE Technological University, Hubballi (2021–2025)</p>
             <p><strong>CGPA:</strong> 8.5</p>
           </div>
         </article>
-        <article class="card">
-          <div class="card-icon" aria-hidden="true">🏅</div>
+        <article class="card reveal">
+          <div class="card-icon">🏅</div>
           <div class="card-body">
             <h3>Pre-University</h3>
             <p>Shree Annadaneshwara P U College, Naregal (2021)</p>
@@ -80,79 +113,85 @@
     </div>
   </section>
 
-  <!-- Projects -->
+  <!-- ================= PROJECTS ================= -->
   <section id="projects" class="section">
     <div class="container">
-      <h2 class="section-title">Projects</h2>
+      <h2 class="section-title reveal">Projects (Cinematic Gallery)</h2>
 
       <div class="grid">
-        <!-- Project Card 1 -->
-        <a class="proj" href="#" target="_blank" rel="noopener">
-          <div class="proj-badge">Featured</div>
+        <a class="proj reveal" href="#" target="_blank" rel="noopener">
+          <div class="proj-media">
+            <div class="glow"></div>
+            <div class="label">Featured</div>
+          </div>
           <div class="proj-content">
-            <h3>Large Linear Feedback Shift Register (NVIDIA Project)</h3>
-            <p>168-bit LFSR for high-quality pseudo-random sequences; analyzed randomness for crypto/simulation use-cases.</p>
+            <h3>168-bit LFSR (NVIDIA Project, Aug 2024)</h3>
+            <p>High-quality pseudo-random sequences; randomness analysis for crypto and simulations.</p>
             <span class="proj-link">Open project ↗</span>
           </div>
         </a>
 
-        <!-- Project Card 2 -->
-        <a class="proj" href="#" target="_blank" rel="noopener">
+        <a class="proj reveal" href="#" target="_blank" rel="noopener">
+          <div class="proj-media">
+            <div class="glow"></div>
+          </div>
           <div class="proj-content">
             <h3>Kalman vs LSTM — Estimation Accuracy</h3>
-            <p>Compared state estimation: observed ~9.76% accuracy gain with LSTM on rapidly varying datasets.</p>
+            <p>Observed ~9.76% accuracy gain with LSTM on rapidly varying datasets.</p>
             <span class="proj-link">Open project ↗</span>
           </div>
         </a>
 
-        <!-- Project Card 3 -->
-        <a class="proj" href="#" target="_blank" rel="noopener">
+        <a class="proj reveal" href="#" target="_blank" rel="noopener">
+          <div class="proj-media">
+            <div class="glow"></div>
+          </div>
           <div class="proj-content">
             <h3>Sensor Fusion Ego Localization (Kalman)</h3>
-            <p>Fused GPS + IMU to improve autonomous vehicle localization using a Kalman filter pipeline.</p>
+            <p>Fused GPS + IMU to improve autonomous vehicle localization accuracy.</p>
             <span class="proj-link">Open project ↗</span>
           </div>
         </a>
       </div>
-      <p class="hint">Tip: replace each project card’s <em>href="#"</em> with your GitHub or demo link.</p>
+
+      <p class="hint">Replace each card’s <code>href="#"</code> with your GitHub repo or live demo link.</p>
     </div>
   </section>
 
-  <!-- Skills -->
-  <section id="skills" class="section">
+  <!-- ================= SKILLS (CONSTELLATION) ================= -->
+  <section id="skills" class="section alt">
     <div class="container">
-      <h2 class="section-title">Skills</h2>
-      <ul class="skill-list">
-        <li><span class="skill-ic" aria-hidden="true">💻</span> C, C++, OOP, SQL</li>
-        <li><span class="skill-ic" aria-hidden="true">⏱️</span> RTOS, Microcontrollers</li>
-        <li><span class="skill-ic" aria-hidden="true">🐧</span> Linux Basics</li>
-        <li><span class="skill-ic" aria-hidden="true">🔌</span> Embedded Systems</li>
-        <li><span class="skill-ic" aria-hidden="true">🔬</span> VLSI Design Basics</li>
+      <h2 class="section-title reveal">Skills Map</h2>
+      <canvas id="constellation" width="900" height="380" aria-label="Animated constellation of skills"></canvas>
+      <ul class="skill-tags reveal">
+        <li>C</li><li>C++</li><li>OOP</li><li>SQL</li>
+        <li>RTOS</li><li>Microcontrollers</li><li>Linux</li>
+        <li>Embedded</li><li>VLSI Basics</li>
       </ul>
     </div>
   </section>
 
-  <!-- Achievements -->
+  <!-- ================= ACHIEVEMENTS ================= -->
   <section id="achievements" class="section">
     <div class="container">
-      <h2 class="section-title">Achievements</h2>
+      <h2 class="section-title reveal">Achievements</h2>
       <ul class="timeline">
-        <li>
-          <div class="dot" aria-hidden="true"></div>
+        <li class="reveal">
+          <div class="dot"></div>
           <div class="tl-body">
-            <h3>IEEE INCET 2024 Publication</h3>
+            <h3>IEEE INCET 2024 — Publication</h3>
             <p>“Analysis of Estimation Accuracy Between Kalman and LSTM Algorithm”.</p>
           </div>
         </li>
-        <li>
-          <div class="dot" aria-hidden="true"></div>
+        <li class="reveal">
+          <div class="dot"></div>
           <div class="tl-body">
             <h3>NMMS Scholarship</h3>
             <p>National Means-Cum-Merit Scholarship recipient.</p>
           </div>
         </li>
-        <li>
-          <div class="dot" aria-hidden="true"></div>
+        <li class="reveal">
+          <div class="dot"></div>
           <div class="tl-body">
             <h3>Service</h3>
             <p>Volunteer for 75th Anniversary Amrit Mahotsav Celebration.</p>
@@ -162,31 +201,25 @@
     </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact" class="section">
+  <!-- ================= CONTACT (GLASS CARD) ================= -->
+  <section id="contact" class="section alt">
     <div class="container">
-      <h2 class="section-title">Contact</h2>
-      <div class="contact-grid">
-        <a class="contact-item" href="mailto:vijaypattar7@gmail.com">
-          <span class="ci-ic" aria-hidden="true">✉️</span>
-          <span>Email</span>
-          <small>vijaypattar7@gmail.com</small>
-        </a>
-        <a class="contact-item" href="https://www.linkedin.com/in/vijaysp7/" target="_blank" rel="noopener">
-          <span class="ci-ic" aria-hidden="true">🔗</span>
-          <span>LinkedIn</span>
-          <small>linkedin.com/in/vijaysp7</small>
-        </a>
-        <a class="contact-item" href="https://github.com/VijaySP43" target="_blank" rel="noopener">
-          <span class="ci-ic" aria-hidden="true">🐙</span>
-          <span>GitHub</span>
-          <small>github.com/VijaySP43</small>
-        </a>
-        <div class="contact-item">
-          <span class="ci-ic" aria-hidden="true">📞</span>
-          <span>Phone</span>
-          <small>+91-7022703120</small>
+      <h2 class="section-title reveal">Contact</h2>
+      <div class="contact glass reveal">
+        <div class="contact-grid">
+          <a class="contact-item" href="mailto:vijaypattar7@gmail.com">✉️ Email<br><small>vijaypattar7@gmail.com</small></a>
+          <a class="contact-item" href="https://www.linkedin.com/in/vijaysp7/" target="_blank" rel="noopener">🔗 LinkedIn<br><small>linkedin.com/in/vijaysp7</small></a>
+          <a class="contact-item" href="https://github.com/VijaySP43" target="_blank" rel="noopener">🐙 GitHub<br><small>github.com/VijaySP43</small></a>
+          <div class="contact-item">📞 Phone<br><small>+91-7022703120</small></div>
         </div>
+
+        <!-- Mailto fallback (works on GitHub Pages). If you want a hosted form later, replace action with Formspree, etc. -->
+        <form class="contact-form" action="mailto:vijaypattar7@gmail.com" method="post" enctype="text/plain">
+          <input type="text" name="name" placeholder="Your name" required />
+          <input type="email" name="email" placeholder="Your email" required />
+          <textarea name="message" rows="4" placeholder="Your message"></textarea>
+          <button class="btn" type="submit">Send</button>
+        </form>
       </div>
     </div>
   </section>
@@ -195,14 +228,6 @@
     <p>© <span id="y"></span> Vijay S P • All rights reserved.</p>
   </footer>
 
-  <script>
-    // Mobile nav toggle
-    const btn = document.querySelector('.nav-toggle');
-    const links = document.querySelector('.nav-links');
-    btn.addEventListener('click', () => links.classList.toggle('open'));
-
-    // Year
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
