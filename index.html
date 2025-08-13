@@ -1,105 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vijay SP - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vijay S P • Portfolio</title>
+  <meta name="description" content="Portfolio of Vijay S P — Electronics & Communication Engineer, Embedded & Automotive Technology." />
+  <link rel="preload" as="image" href="profile.jpg">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Small inline fallback to avoid FOUC if style.css loads a tad late */
+    html{scroll-behavior:smooth}
+    *{box-sizing:border-box}
+  </style>
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container header-content">
-            <img src="profile.jpg" alt="Vijay SP" class="profile-pic">
-            <div>
-                <h1>Vijay S P</h1>
-                <p>Electronics & Communication Engineer | Embedded Systems & Automotive Technology Enthusiast</p>
-                <a href="#contact" class="btn">Contact Me</a>
-            </div>
-        </div>
-    </header>
+  <!-- Sticky Navbar -->
+  <nav class="nav">
+    <a href="#" class="brand">Vijay<span>SP</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-    <!-- About -->
-    <section id="about">
-        <div class="container">
-            <h2>Career Objective</h2>
-            <p>
-                Passionate about innovation and solving complex problems, I aim to drive advancements in automotive
-                technology and software development. My focus is on building intelligent, high-performance systems
-                that promote efficiency and sustainability through continuous learning and adaptation.
-            </p>
+  <!-- Header / Hero -->
+  <header class="hero">
+    <div class="container hero-grid">
+      <img src="profile.jpg" alt="Portrait of Vijay S P" class="avatar" />
+      <div class="hero-copy">
+        <h1 class="title">Vijay <span>S P</span></h1>
+        <p class="subtitle">Electronics & Communication Engineer • Embedded Systems & Automotive Technology Enthusiast</p>
+        <div class="hero-cta">
+          <a class="btn" href="#contact">Contact Me</a>
+          <a class="btn btn-ghost" href="#projects">View Projects</a>
         </div>
-    </section>
+      </div>
+    </div>
+    <div class="hero-wave" aria-hidden="true"></div>
+  </header>
 
-    <!-- Education -->
-    <section id="education">
-        <div class="container">
-            <h2>Education</h2>
-            <ul>
-                <li><strong>Bachelor of Engineering in Electronics and Communication</strong> - KLE Technological University, Hubballi (2021–2025) – CGPA: 8.5</li>
-                <li><strong>Pre-University Education</strong> - Shree Annadaneshwara P U College, Naregal (2021) – Percentage: 97.16%</li>
-            </ul>
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <p class="lead">
+        Passionate about innovation and solving complex problems, I aim to drive advancements in automotive technology and software development.
+        My focus is on building intelligent, high-performance systems that promote efficiency and sustainability through continuous learning and adaptation.
+      </p>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="section">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">🎓</div>
+          <div class="card-body">
+            <h3>B.E. in Electronics & Communication</h3>
+            <p>KLE Technological University, Hubballi (2021–2025)</p>
+            <p><strong>CGPA:</strong> 8.5</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">🏅</div>
+          <div class="card-body">
+            <h3>Pre-University</h3>
+            <p>Shree Annadaneshwara P U College, Naregal (2021)</p>
+            <p><strong>Percentage:</strong> 97.16%</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+
+      <div class="grid">
+        <!-- Project Card 1 -->
+        <a class="proj" href="#" target="_blank" rel="noopener">
+          <div class="proj-badge">Featured</div>
+          <div class="proj-content">
+            <h3>Large Linear Feedback Shift Register (NVIDIA Project)</h3>
+            <p>168-bit LFSR for high-quality pseudo-random sequences; analyzed randomness for crypto/simulation use-cases.</p>
+            <span class="proj-link">Open project ↗</span>
+          </div>
+        </a>
+
+        <!-- Project Card 2 -->
+        <a class="proj" href="#" target="_blank" rel="noopener">
+          <div class="proj-content">
+            <h3>Kalman vs LSTM — Estimation Accuracy</h3>
+            <p>Compared state estimation: observed ~9.76% accuracy gain with LSTM on rapidly varying datasets.</p>
+            <span class="proj-link">Open project ↗</span>
+          </div>
+        </a>
+
+        <!-- Project Card 3 -->
+        <a class="proj" href="#" target="_blank" rel="noopener">
+          <div class="proj-content">
+            <h3>Sensor Fusion Ego Localization (Kalman)</h3>
+            <p>Fused GPS + IMU to improve autonomous vehicle localization using a Kalman filter pipeline.</p>
+            <span class="proj-link">Open project ↗</span>
+          </div>
+        </a>
+      </div>
+      <p class="hint">Tip: replace each project card’s <em>href="#"</em> with your GitHub or demo link.</p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <ul class="skill-list">
+        <li><span class="skill-ic" aria-hidden="true">💻</span> C, C++, OOP, SQL</li>
+        <li><span class="skill-ic" aria-hidden="true">⏱️</span> RTOS, Microcontrollers</li>
+        <li><span class="skill-ic" aria-hidden="true">🐧</span> Linux Basics</li>
+        <li><span class="skill-ic" aria-hidden="true">🔌</span> Embedded Systems</li>
+        <li><span class="skill-ic" aria-hidden="true">🔬</span> VLSI Design Basics</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section id="achievements" class="section">
+    <div class="container">
+      <h2 class="section-title">Achievements</h2>
+      <ul class="timeline">
+        <li>
+          <div class="dot" aria-hidden="true"></div>
+          <div class="tl-body">
+            <h3>IEEE INCET 2024 Publication</h3>
+            <p>“Analysis of Estimation Accuracy Between Kalman and LSTM Algorithm”.</p>
+          </div>
+        </li>
+        <li>
+          <div class="dot" aria-hidden="true"></div>
+          <div class="tl-body">
+            <h3>NMMS Scholarship</h3>
+            <p>National Means-Cum-Merit Scholarship recipient.</p>
+          </div>
+        </li>
+        <li>
+          <div class="dot" aria-hidden="true"></div>
+          <div class="tl-body">
+            <h3>Service</h3>
+            <p>Volunteer for 75th Anniversary Amrit Mahotsav Celebration.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-grid">
+        <a class="contact-item" href="mailto:vijaypattar7@gmail.com">
+          <span class="ci-ic" aria-hidden="true">✉️</span>
+          <span>Email</span>
+          <small>vijaypattar7@gmail.com</small>
+        </a>
+        <a class="contact-item" href="https://www.linkedin.com/in/vijaysp7/" target="_blank" rel="noopener">
+          <span class="ci-ic" aria-hidden="true">🔗</span>
+          <span>LinkedIn</span>
+          <small>linkedin.com/in/vijaysp7</small>
+        </a>
+        <a class="contact-item" href="https://github.com/VijaySP43" target="_blank" rel="noopener">
+          <span class="ci-ic" aria-hidden="true">🐙</span>
+          <span>GitHub</span>
+          <small>github.com/VijaySP43</small>
+        </a>
+        <div class="contact-item">
+          <span class="ci-ic" aria-hidden="true">📞</span>
+          <span>Phone</span>
+          <small>+91-7022703120</small>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Projects -->
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>Large Linear Feedback Shift Register (NVIDIA Project - Aug 2024)</h3>
-                <p>Developed a 168-bit LFSR for pseudo-random number generation, analyzed randomness and achieved high-quality sequences for cryptography and simulations.</p>
-            </div>
-            <div class="project">
-                <h3>Analysis of Estimation Accuracy Between Kalman and LSTM Algorithms</h3>
-                <p>Compared Kalman and LSTM algorithms for state estimation, showing a 9.76% increase in LSTM accuracy for rapidly varying datasets.</p>
-            </div>
-            <div class="project">
-                <h3>Sensor Fusion Based Ego Localization using Kalman Filter</h3>
-                <p>Integrated GPS and IMU sensors to improve autonomous vehicle localization accuracy using a Kalman filter.</p>
-            </div>
-        </div>
-    </section>
+  <footer class="footer">
+    <p>© <span id="y"></span> Vijay S P • All rights reserved.</p>
+  </footer>
 
-    <!-- Skills -->
-    <section id="skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <ul>
-                <li>C, C++, OOP, SQL</li>
-                <li>RTOS, Microcontrollers</li>
-                <li>Linux Basics</li>
-                <li>Embedded Systems</li>
-                <li>VLSI Design Basics</li>
-            </ul>
-        </div>
-    </section>
+  <script>
+    // Mobile nav toggle
+    const btn = document.querySelector('.nav-toggle');
+    const links = document.querySelector('.nav-links');
+    btn.addEventListener('click', () => links.classList.toggle('open'));
 
-    <!-- Achievements -->
-    <section id="achievements">
-        <div class="container">
-            <h2>Achievements</h2>
-            <ul>
-                <li>Publication at IEEE INCET 2024: “Analysis of Estimation Accuracy Between Kalman and LSTM Algorithm”</li>
-                <li>National Means-Cum-Merit Scholarship Recipient</li>
-                <li>Volunteer for 75th Anniversary Amrit Mahotsav Celebration</li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:vijaypattar7@gmail.com">vijaypattar7@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/vijaysp7/" target="_blank">linkedin.com/in/vijaysp7</a></p>
-            <p>GitHub: <a href="https://github.com/VijaySP43" target="_blank">github.com/VijaySP43</a></p>
-            <p>Phone: +91-7022703120</p>
-        </div>
-    </section>
-
-    <footer>
-        <p>© 2025 Vijay S P | Portfolio</p>
-    </footer>
+    // Year
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
